@@ -5,6 +5,10 @@
         "string": "cpp",
         "vector": "cpp",
         "ostream": "cpp",
-        "iostream": "cpp"
-    }
+        "iostream": "cpp",
+        "*.tcc": "cpp"
+    },
+    "cSpell.words": [
+        "isprime"
+    ]
 }
