@@ -188,7 +188,18 @@ int nPr(int n, int r) {
 /////////////////////////////////////// MAIN CODE /////////////////////////////
 void ok() {
 
-
+int n ;
+cin >> n ;
+string s ;
+cin >> s ;
+if(n == 2 && s[0]==s[1]){ no; return ;}
+if(n==3 && s[0]==s[2]){no; return ;}
+if(s[0]==s[n-1]){no; return ;}
+else{
+    yes;
+ return ;
+}
+   
 
 
 

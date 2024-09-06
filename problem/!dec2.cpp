@@ -1,25 +1,28 @@
-//----------------> JAI SHREE RAM <------------- //
 #include<bits/stdc++.h>
 using namespace std;
+#define ll long long
+
+int  main(){
 
 
+	int n,a,b;
+	cin>>n>>a>>b;
 
-int main(){
-    int t;
-    cin>>t;
-    while(t--){
-   string s;
-   cin>>s;
-   int z = 0,one=0;
-   int n = s.length();
-   for(int i=0;i<n;i++){
-    if(s[i]==0)z++;
-    else one++;
-   }
+	vector<int>v(n);
+	for(int i=0;i<n;i++){
+		cin>>v[i];
+	}
 
-   
-    
+		int ans = a+b;
+		for(int i=0;i<n;i++){
+		if(v[i]==ans){
+			cout<<i+1;break;
+		}
+	}
 
-    }
-    return 0;
+		
+
+
+  return 0;
+
 }

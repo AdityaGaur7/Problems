@@ -189,11 +189,27 @@ int nPr(int n, int r) {
 void ok() {
 
 
+int n;
+cin>>n;
+vector<int>v(n);
+for(int i=0;i<n;i++)cin>>v[i];
 
 
+int i=1;
+int ans = v[0];
+for(;i<n;i++){
+    
+    ans=max(ans,v[i]);
+    i++;
+    // cout<<ans<<"->";
+    if(i==n-1)break;
+   
+     ans=min(ans,v[i]);
+    
+        // cout<<ans<<"->";
+}
 
-
-
+cout<<ans<<endl;
 
 }
 

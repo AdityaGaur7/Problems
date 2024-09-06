@@ -185,6 +185,49 @@ int nPr(int n, int r) {
     return fact(n) / fact(n - r);
 }
 
+int bin2deci(string num){
+ return stoi(num, 0, 2);
+    
+}
+
+string deci2bin(int n){
+     string b =bitset<32>(n).to_string();
+     return b;
+}
+
+int sumofdigits(int n){
+    int sum = 0;
+    while (n != 0) {
+        sum = sum + n % 10;
+        n = n / 10;
+    }
+    return sum;
+}
+
+int countdigit(int n){
+    return floor(log10(n) + 1);
+}
+
+int firstdigit(int n){
+    while (n >= 10)
+        n /= 10;
+    return n;
+}
+
+int flipbits(int num) 
+{ 
+    
+    int x = log2(num) + 1; 
+  
+    
+    for (int i = 0; i < x; i++)  
+       num = (num ^ (1 << i));  
+   
+    return num;
+} 
+
+
+
 /////////////////////////////////////// MAIN CODE /////////////////////////////
 void ok() {
 
